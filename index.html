@@ -3,84 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Franchise Underworld | Lumenridge Secrets</title>
-    <meta name="description" content="Ten factions. One staged disaster. Lumenridge keeps the secret. A noir graphic novel set in a rain-soaked city.">
+    <title>Franchise Underworld - Noir Graphic Novel</title>
+    <meta name="description" content="A noir graphic novel set in Lumenridge. Ten factions. One staged disaster. Follow Julian Pike as he uncovers the truth.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Grain Overlay for Film Noir Feel -->
-    <div class="grain-overlay"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">FRANCHISE<br>UNDERWORLD</div>
+            <ul class="nav-menu">
+                <li><a href="#story">Story</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="fade-in">Franchise<br><span class="text-maroon">Underworld</span></h1>
-            <p class="tagline fade-in-delay">Ten factions. One staged disaster. Lumenridge keeps the secret.</p>
-            <a href="#newsletter" class="btn fade-in-delay-2">Follow the Pike Route</a>
+            <h1>FRANCHISE<span class="highlight">UNDERWORLD</span></h1>
+            <p class="tagline">Ten factions. One staged disaster. Lumenridge keeps the secret.</p>
+            <p class="subtitle">A noir graphic novel set in a rain-soaked city where truth is currency and silence keeps the city alive.</p>
+            <a href="#story" class="cta-btn">EXPLORE THE STORY</a>
         </div>
-    </header>
+        <div class="scroll-indicator">
+            <span>↓ SCROLL</span>
+        </div>
+    </section>
 
-    <!-- Synopsis Section -->
-    <section class="synopsis">
-        <div class="synopsis-grid">
-            <div class="synopsis-text scroll-reveal">
-                <h2>The Table feeds the city.<br>It owns it.</h2>
-                <p>
-                    Lumenridge is a late-90s city built on shifts, silence, and a fragile truce between the factions that feed it.
-                    When a pastor known for keeping the peace is found dead, the city calls it an accident.
-                    <strong class="text-gold">Julian Pike</strong> knows better.
-                </p>
-                <br>
-                <p>
-                    A former delivery driver turned blacklisted reporter, Pike uncovers fragments of a buried archive known as the
-                    <em class="text-maroon">Burning Crown</em>, proof that the city's worst disaster was staged decades ago.
-                </p>
-                <br>
-                <p>
-                    As factions tighten control and routes begin to disappear, Pike is forced back into a world that profits from forgetting.
-                    In Lumenridge, truth is currency, and silence keeps the city alive.
-                </p>
+    <!-- Story Section -->
+    <section id="story" class="story">
+        <div class="story-container">
+            <div class="story-text">
+                <h2>THE BURNING CROWN</h2>
+                <p>In the late-90s city of Lumenridge, ten factions feed the city's hunger. They call it <em>the Table</em>—a network of power, silence, and carefully orchestrated chaos.</p>
+                <p>When a pastor known for keeping the peace is found dead, the city calls it an accident. But <strong>Julian Pike</strong> knows better.</p>
+                <p>A former delivery driver turned blacklisted reporter, Pike uncovers fragments of a buried archive: proof that the city's worst disaster was staged decades ago. This archive—<em>the Burning Crown</em>—holds the key to understanding who really controls Lumenridge.</p>
+                <p>As Pike digs deeper, routes disappear. Factions tighten control. And the people who remember the truth begin to vanish.</p>
+                <p class="closing">In Lumenridge, the only currency that matters is truth. And the only way to stay alive is to stay silent.</p>
             </div>
-
-            <!-- Placeholder for Character Art -->
-            <div class="synopsis-visual scroll-reveal delay-1">
-                <div class="gallery-item" style="height: 100%; min-height: 400px; border: 1px solid var(--color-gold);">
-                    <!-- We will replace this with generated art later -->
-                    <div style="text-align: center; opacity: 0.5;">
-                        <h3>Character Art Placeholder</h3>
-                        <p>Julian Pike</p>
-                    </div>
+            <div class="story-visual">
+                <div class="character-card">
+                    <div class="card-title">JULIAN PIKE</div>
+                    <div class="card-role">PROTAGONIST</div>
+                    <p>Blacklisted reporter searching for the truth in a city built on lies.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Preview -->
-    <section class="gallery">
-        <h2 style="text-align: center;">The Archives</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item scroll-reveal">Panel 01 - The Accident</div>
-            <div class="gallery-item scroll-reveal delay-1">Panel 02 - The Meeting</div>
-            <div class="gallery-item scroll-reveal delay-2">Panel 03 - The Archive</div>
+    <!-- Themes Section -->
+    <section class="themes">
+        <h2>THEMES & ATMOSPHERE</h2>
+        <div class="themes-grid">
+            <div class="theme-card">
+                <h3>NOIR</h3>
+                <p>Rain-soaked streets, shadowed alleys, and moral ambiguity at every corner.</p>
+            </div>
+            <div class="theme-card">
+                <h3>CONSPIRACY</h3>
+                <p>Hidden archives, staged disasters, and a conspiracy running decades deep.</p>
+            </div>
+            <div class="theme-card">
+                <h3>POWER</h3>
+                <p>Ten factions control everything. Truth is currency. Silence is survival.</p>
+            </div>
+            <div class="theme-card">
+                <h3>MYSTERY</h3>
+                <p>Every answer leads to more questions. What really happened in Lumenridge?</p>
+            </div>
         </div>
     </section>
 
-    <!-- Newsletter CTA -->
-    <section id="newsletter" class="newsletter">
-        <div class="newsletter-content scroll-reveal">
-            <h2>Get the Prologue</h2>
-            <p>Fast food was never the business.</p>
-            <form class="input-group" onsubmit="event.preventDefault(); alert('This is a demo form. In a real site, this would connect to your email service (e.g., Mailchimp).');">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit" class="btn">Get Notified</button>
-            </form>
-            <p style="margin-top: 2rem; font-size: 0.8rem; opacity: 0.6;">No spam. Just the drops.</p>
+    <!-- Characters Preview -->
+    <section id="characters" class="characters">
+        <h2>KEY CHARACTERS</h2>
+        <div class="characters-grid">
+            <div class="char-item">
+                <div class="char-icon">📰</div>
+                <h3>Julian Pike</h3>
+                <p>Former delivery driver. Blacklisted reporter. Truth seeker.</p>
+            </div>
+            <div class="char-item">
+                <div class="char-icon">👥</div>
+                <h3>The Ten Factions</h3>
+                <p>Each controls a piece of Lumenridge. Each has secrets to protect.</p>
+            </div>
+            <div class="char-item">
+                <div class="char-icon">🔥</div>
+                <h3>The Burning Crown</h3>
+                <p>An archive. A legend. The proof that changes everything.</p>
+            </div>
+            <div class="char-item">
+                <div class="char-icon">🌃</div>
+                <h3>Lumenridge</h3>
+                <p>The city itself is a character. Built on shifts, silence, and secrets.</p>
+            </div>
         </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="coming-soon">
+        <h2>COMING SOON</h2>
+        <p>The first chapters of Franchise Underworld are in development.</p>
+        <p>Follow the Pike Route to stay updated.</p>
+        <form class="newsletter-form" id="contact">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="submit-btn">NOTIFY ME</button>
+        </form>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>Ridge Silence still holds. &copy; 2026 Franchise Underworld.</p>
+    <footer class="footer">
+        <p>&copy; 2026 Franchise Underworld. All rights reserved.</p>
+        <p>Ridge Silence still holds.</p>
     </footer>
 
     <script src="script.js"></script>
